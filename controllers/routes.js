@@ -6,20 +6,19 @@ var leads = require("../models/leads.js");
 //end of your file.
 router.get("/", function(req, res) {
   leads.selectAll(function(data) {
-    var hbsObject = {
-      leads: data
-    };
-    res.render("index", hbsObject);
+    console.log(data);
+    res.render("index");
   });
 });
 
-// need to fix this
 router.post("/", function(req, res) {
-  leads.insertOne(["lead_name"], [req.body.lead_name], function() {
+  cat.create([
+    "firstName", "lastName", "cityArrested", "crime", "felonyOrMist", "email"
+  ], [
+    req.body.firstName, req.body.lastName, req.body.cityArrested, req.body.crime , req.body.felonyOrMist , req.body.email 
+  ], function() {
     res.redirect("/");
   });
 });
-
-
 
 module.exports = router;

@@ -4,14 +4,14 @@ var orm = require("../config/orm.js");
 // functions using lead specific input for the ORM.
 
 var leads = {
-  selectAll: function(cb) {
-    orm.selectAll("leads", function(res) {
+  all: function(cb) {
+    orm.all("leads", function(res) {
       cb(res);
     });
   },
   // The variables cols and vals are arrays.
-  insertOne: function(cols, vals, cb) {
-    orm.insertOne("leads", cols, vals, function(res) {
+  create: function(cols, vals, cb) {
+    orm.create("leads", cols, vals, function(res) {
       cb(res);
     });
   }

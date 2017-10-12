@@ -1,8 +1,7 @@
-CREATE DATABASE oclawyers_db;
+CREATE DATABASE IF NOT EXISTS oclawyers_db;
 USE oclawyers_db;
 
-CREATE TABLE leads
-(
+CREATE TABLE leads (
 	id int NOT NULL AUTO_INCREMENT,
 	firstName varchar(255) NOT NULL,
 	lastName varchar(255) NOT NULL,
