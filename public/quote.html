@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- JS files -->
+    <script src="assets/js/app.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>OC Lawyers</title>
+  </head>
+<body>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  	<a class="navbar-brand" href="/index.html">OC Lawyers</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+      <!--   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana">Check us out on Yelp! »</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank"><img src="assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid" id="quoteBanner">
+  <h1>$7,500 total
+  <br>$1,000 down
+  <br>$650/month</h1>
+</div>
+<!-- Form -->
+<h3>Have an Expert Lawyer Contact You ASAP!</h3>
+
+<form method="post" action="/" class="container" id="needs-validation" novalidate>
+<!-- First and Last Name of Contact Person-->
+    <div class="row">
+      <div class="col">
+        <input type="text" name="firstName" class="form-control form-control-lg" placeholder="First name" required>
+          <div class="invalid-feedback">
+            Please provide your first name.
+          </div>
+      </div>
+      <div class="col">
+        <input type="text" name="lastName" class="form-control form-control-lg" placeholder="Last name" required>
+          <div class="invalid-feedback">
+            Please provide your last name.
+          </div>
+      </div>
+    </div>
+<!-- Contact Phone Number and Best Time-->
+    <div class="row">
+      <div class="col">
+        <input type="text" name="phone" class="form-control form-control-lg" placeholder="Phone number" required>
+          <div class="invalid-feedback">
+            Please provide your phone number.
+          </div>
+      </div>
+      <div class="col">
+        
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="bestTime" required>
+          <option selected>Choose best time to call...</option>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+          <option value="ASAP">ASAP</option>
+        </select> 
+      </div>
+    </div>  
+<!-- Date of Birth & Date of Arrest-->
+    <div class="row">
+      <div class="col">
+        <input type="text" name="dob" class="form-control form-control-lg" placeholder="Date of Birth" required>
+          <div class="invalid-feedback">
+            Please provide your date of birth.
+          </div>
+      </div>
+      <div class="col">
+        <input type="text" name="dateArrested" class="form-control form-control-lg" placeholder="Date Arrested" required>
+          <div class="invalid-feedback">
+            Please provide the date arrested.
+          </div>
+      </div>
+    </div>    
+<!-- City of Residence -->
+    <div class="form-group">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">City of Residence</label>
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="city" required>
+          <option selected>Choose...</option>
+          <option value="Aliso Viejo">Aliso Viejo</option>
+          <option value="Anaheim">Anaheim</option>
+          <option value="Brea">Brea</option>
+          <option value="Buena Park">Buena Park</option>
+          <option value="Costa Mesa">Costa Mesa</option>
+          <option value="Cypress">Cypress</option>
+          <option value="Dana Point">Dana Point</option>
+          <option value="Fountain Valley">Fountain Valley</option>
+          <option value="Fullerton">Fullerton</option>
+          <option value="Garden Grove">Garden Grove</option>
+          <option value="Huntington Beach">Huntington Beach</option>
+          <option value="Irvine">Irvine</option>
+          <option value="La Habra">La Habra</option>
+          <option value="La Palma">La Palma</option>
+          <option value="Laguna Beach">Laguna Beach</option>
+          <option value="Laguna Hills">Laguna Hills</option>
+          <option value="Laguna Niguel">Laguna Niguel</option>
+          <option value="Laguna Woods">Laguna Woods</option>
+          <option value="Lake Forest">Lake Forest</option>
+          <option value="Los Alamitos">Los Alamitos</option>
+          <option value="Mission Viejo">Mission Viejo</option>
+          <option value="Newport Beach">Newport Beach</option>
+          <option value="Placentia">Placentia</option>
+          <option value="Rancho Santa Margarita">Rancho Santa Margarita</option>
+          <option value="San Clemente">San Clemente</option>
+          <option value="San Juan Capistrano">San Juan Capistrano</option>
+          <option value="Santa Ana">Santa Ana</option>
+          <option value="Seal Beach">Seal Beach</option>
+          <option value="Stanton">Stanton</option>
+          <option value="Villa Park">Villa Park</option>
+          <option value="Westminster">Westminster</option>
+          <option value="Yorba Linda">Yorba Linda</option>
+        </select>
+    </div>
+<!-- Crime/Charge -->
+    <div class="form-group">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Multiple Charges?</label>
+        <select multiple class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="multiCrimes">
+          <option selected>Choose...</option>
+          <option value="Aggrevated Assault">Aggrevated Assault</option>
+          <option value="Arson">Arson</option>
+          <option value="Assault ">Assault </option>
+          <option value="Battery ">Battery </option>
+          <option value="Bribery">Bribery</option>
+          <option value="Carjacking">Carjacking</option>
+          <option value="Conspiracy">Conspiracy</option>
+          <option value="Disorderly Conduct">Disorderly Conduct</option>
+          <option value="Disturbing the Peace">Disturbing the Peace</option>
+          <option value="Domestic Violence">Domestic Violence</option>
+          <option value="Driving on Suspended License">Driving on Suspended License</option>
+          <option value="Driving Under Influence of Alcohol">Driving Under Influence of Alcohol</option>
+          <option value="Drug Crimes">Drug Crimes</option>
+          <option value="Embezzlement">Embezzlement</option>
+          <option value="Evading">Evading</option>
+          <option value="Extortion">Extortion</option>
+          <option value="Failure to Appear">Failure to Appear</option>
+          <option value="False Imprisonment">False Imprisonment</option>
+          <option value="First Degree Burglary">First Degree Burglary</option>
+          <option value="Forgery">Forgery</option>
+          <option value="Fraud">Fraud</option>
+          <option value="Hate Crimes">Hate Crimes</option>
+          <option value="Hit and Run">Hit and Run</option>
+          <option value="Identity Theft">Identity Theft</option>
+          <option value="Indecent Exposure">Indecent Exposure</option>
+          <option value="Insurance Fraud">Insurance Fraud</option>
+          <option value="Kidnapping">Kidnapping</option>
+          <option value="Manslaughter">Manslaughter</option>
+          <option value="Mayhem">Mayhem</option>
+          <option value="Minor in Possession">Minor in Possession</option>
+          <option value="Other">Other</option>
+          <option value="Perjury">Perjury</option>
+          <option value="Prostitution">Prostitution</option>
+          <option value="Public Intoxication">Public Intoxication</option>
+          <option value="Rape">Rape</option>
+          <option value="Resisting Arrest">Resisting Arrest</option>
+          <option value="Robbery">Robbery</option>
+          <option value="Second Degree Burglary">Second Degree Burglary</option>
+          <option value="Shoplifting">Shoplifting</option>
+          <option value="Stalking">Stalking</option>
+          <option value="Statutory Rape">Statutory Rape</option>
+          <option value="Terrorism">Terrorism</option>
+          <option value="Theft / Larceny">Theft / Larceny</option>
+          <option value="Trespass">Trespass</option>
+          <option value="Vandalism">Vandalism</option>
+          <option value="Weapons">Weapons</option>
+        </select>
+    </div>
+<!-- Button -->
+    <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
+    </div>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

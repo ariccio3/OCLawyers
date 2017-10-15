@@ -2,7 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-// var expressHandlebars = require("express-handlebars");
+var nodemailer = require('nodemailer');
 
 // EXPRESS CONFIGURATION
 //Stores the express function in variable app to be used below
