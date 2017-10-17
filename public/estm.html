@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- JQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- JS files -->
+    <script src="assets/js/app.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>OC Lawyers</title>
+  </head>
+<body>
+<!-- Navigation -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  	<a class="navbar-brand" href="/index.html">OC Lawyers</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+      <!--   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana">Check us out on Yelp! »</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank"><img src="assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid" id="estBanner">
+  <div class="bannerText">
+    <span id="avg">Based on the info you submitted, the average cost for our service</span><br />
+    <span id="monthly">$495/month</span><br />
+    <span id="total">$495/down (Total estimate $2,495-$5,495)</span>
+  </div>
+</div>
+<!-- Form -->
+<h3>Have an Expert Lawyer Contact You ASAP!</h3><br />
+
+<form method="post" action="/est" class="form-control" id="needs-validation" novalidate>
+<!-- First and Last Name of Contact Person-->
+    <div class="row">
+      <div class="col">
+      <label class="mr-sm-2">First Name</label>
+        <input type="text" name="firstName" class="form-control form-control-lg" required>
+      </div>
+      <div class="col">
+      <label class="mr-sm-2">Last Name</label>
+        <input type="text" name="lastName" class="form-control form-control-lg" required>
+      </div>
+    </div>
+<!-- Contact Phone Number and Best Time-->
+    <div class="row">
+      <div class="col">
+      <label class="mr-sm-2">Phone Number</label>
+        <input type="text" name="phone" class="form-control form-control-lg" required>
+      </div>
+      <div class="col">
+        <label class="mr-sm-2">Best Time to Call</label>
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
+          <option value="" selected>Choose...</option>
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+          <option value="ASAP">ASAP</option>
+        </select> 
+      </div>
+    </div>  
+<!-- Date of Birth & Date of Arrest-->
+    <div class="row">
+      <div class="col">
+      <label class="mr-sm-2">Date of Birth</label>
+        <input type="text" name="dob" class="form-control form-control-lg">
+      </div>
+      <div class="col">
+      <label class="mr-sm-2">Date Arrested</label>
+        <input type="text" name="dateArrested" class="form-control form-control-lg">
+      </div>
+    </div>    
+<!-- Multiple Offences & Prior Charges-->
+    <div class="row">
+      <div class="col">
+      <label class="mr-sm-2">List Additional Charges</label>
+        <input type="text" name="multipleOff" class="form-control form-control-lg">
+      </div>
+      <div class="col">
+      <label class="mr-sm-2">List Any Prior Convictions</label>
+        <input type="text" name="priors" class="form-control form-control-lg">
+      </div>
+    </div>
+<!-- City of Residence -->
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label class="mr-sm-2">City of Residence</label>
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
+          <option selected>Choose...</option>
+          <option value="Aliso Viejo">Aliso Viejo</option>
+          <option value="Anaheim">Anaheim</option>
+          <option value="Brea">Brea</option>
+          <option value="Buena Park">Buena Park</option>
+          <option value="Costa Mesa">Costa Mesa</option>
+          <option value="Cypress">Cypress</option>
+          <option value="Dana Point">Dana Point</option>
+          <option value="Fountain Valley">Fountain Valley</option>
+          <option value="Fullerton">Fullerton</option>
+          <option value="Garden Grove">Garden Grove</option>
+          <option value="Huntington Beach">Huntington Beach</option>
+          <option value="Irvine">Irvine</option>
+          <option value="La Habra">La Habra</option>
+          <option value="La Palma">La Palma</option>
+          <option value="Laguna Beach">Laguna Beach</option>
+          <option value="Laguna Hills">Laguna Hills</option>
+          <option value="Laguna Niguel">Laguna Niguel</option>
+          <option value="Laguna Woods">Laguna Woods</option>
+          <option value="Lake Forest">Lake Forest</option>
+          <option value="Los Alamitos">Los Alamitos</option>
+          <option value="Mission Viejo">Mission Viejo</option>
+          <option value="Newport Beach">Newport Beach</option>
+          <option value="Placentia">Placentia</option>
+          <option value="Rancho Santa Margarita">Rancho Santa Margarita</option>
+          <option value="San Clemente">San Clemente</option>
+          <option value="San Juan Capistrano">San Juan Capistrano</option>
+          <option value="Santa Ana">Santa Ana</option>
+          <option value="Seal Beach">Seal Beach</option>
+          <option value="Stanton">Stanton</option>
+          <option value="Villa Park">Villa Park</option>
+          <option value="Westminster">Westminster</option>
+          <option value="Yorba Linda">Yorba Linda</option>
+          <option value="Other">Other</option>
+          <option value="Los Angeles County">Los Angeles County</option>
+          <option value="San Bernadino County">San Bernadino County</option>
+          <option value="San Diego County">San Diego County</option>
+        </select>
+      </div>
+    </div>
+<!-- Button -->
+    <button type="submit" class="btn btn-outline-primary btn-lg" id="get-est-btn">Submit</button>
+  </div>
+</form>
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  "use strict";
+  window.addEventListener("load", function() {
+    var form = document.getElementById("needs-validation");
+    form.addEventListener("submit", function(event) {
+      if (form.checkValidity() == false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    }, false);
+  }, false);
+}());
+</script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -39,41 +39,37 @@
 </nav>
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid" id="quoteBanner">
-  <h1>$7,500 total
-  <br>$1,000 down
-  <br>$650/month</h1>
+  <div class="bannerText">
+    <span id="avg">Based on the info you submitted, the average cost for our service</span><br />
+    <span id="monthly">$995/month</span><br />
+    <span id="total">$995/down (Total estimate $5,495-$7,495)</span>
+  </div>
 </div>
 <!-- Form -->
-<h3>Have an Expert Lawyer Contact You ASAP!</h3>
+<h3>Have an Expert Lawyer Contact You ASAP!</h3><br />
 
-<form method="post" action="/" class="container" id="needs-validation" novalidate>
+<form method="post" action="/est" class="form-control" id="needs-validation" novalidate>
 <!-- First and Last Name of Contact Person-->
     <div class="row">
       <div class="col">
-        <input type="text" name="firstName" class="form-control form-control-lg" placeholder="First name" required>
-          <div class="invalid-feedback">
-            Please provide your first name.
-          </div>
+      <label class="mr-sm-2">First Name</label>
+        <input type="text" name="firstName" class="form-control form-control-lg" required>
       </div>
       <div class="col">
-        <input type="text" name="lastName" class="form-control form-control-lg" placeholder="Last name" required>
-          <div class="invalid-feedback">
-            Please provide your last name.
-          </div>
+      <label class="mr-sm-2">Last Name</label>
+        <input type="text" name="lastName" class="form-control form-control-lg" required>
       </div>
     </div>
 <!-- Contact Phone Number and Best Time-->
     <div class="row">
       <div class="col">
-        <input type="text" name="phone" class="form-control form-control-lg" placeholder="Phone number" required>
-          <div class="invalid-feedback">
-            Please provide your phone number.
-          </div>
+      <label class="mr-sm-2">Phone Number</label>
+        <input type="text" name="phone" class="form-control form-control-lg" required>
       </div>
       <div class="col">
-        
-        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="bestTime" required>
-          <option selected>Choose best time to call...</option>
+        <label class="mr-sm-2">Best Time to Call</label>
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
+          <option value="" selected>Choose...</option>
           <option value="AM">AM</option>
           <option value="PM">PM</option>
           <option value="ASAP">ASAP</option>
@@ -83,22 +79,31 @@
 <!-- Date of Birth & Date of Arrest-->
     <div class="row">
       <div class="col">
-        <input type="text" name="dob" class="form-control form-control-lg" placeholder="Date of Birth" required>
-          <div class="invalid-feedback">
-            Please provide your date of birth.
-          </div>
+      <label class="mr-sm-2">Date of Birth</label>
+        <input type="text" name="dob" class="form-control form-control-lg">
       </div>
       <div class="col">
-        <input type="text" name="dateArrested" class="form-control form-control-lg" placeholder="Date Arrested" required>
-          <div class="invalid-feedback">
-            Please provide the date arrested.
-          </div>
+      <label class="mr-sm-2">Date Arrested</label>
+        <input type="text" name="dateArrested" class="form-control form-control-lg">
       </div>
     </div>    
+<!-- Multiple Offences & Prior Charges-->
+    <div class="row">
+      <div class="col">
+      <label class="mr-sm-2">List Additional Charges</label>
+        <input type="text" name="multipleOff" class="form-control form-control-lg">
+      </div>
+      <div class="col">
+      <label class="mr-sm-2">List Any Prior Convictions</label>
+        <input type="text" name="priors" class="form-control form-control-lg">
+      </div>
+    </div>
 <!-- City of Residence -->
-    <div class="form-group">
-        <label class="mr-sm-2" for="inlineFormCustomSelect">City of Residence</label>
-        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="city" required>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label class="mr-sm-2">City of Residence</label>
+        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
           <option selected>Choose...</option>
           <option value="Aliso Viejo">Aliso Viejo</option>
           <option value="Anaheim">Anaheim</option>
@@ -132,64 +137,16 @@
           <option value="Villa Park">Villa Park</option>
           <option value="Westminster">Westminster</option>
           <option value="Yorba Linda">Yorba Linda</option>
-        </select>
-    </div>
-<!-- Crime/Charge -->
-    <div class="form-group">
-        <label class="mr-sm-2" for="inlineFormCustomSelect">Multiple Charges?</label>
-        <select multiple class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="multiCrimes">
-          <option selected>Choose...</option>
-          <option value="Aggrevated Assault">Aggrevated Assault</option>
-          <option value="Arson">Arson</option>
-          <option value="Assault ">Assault </option>
-          <option value="Battery ">Battery </option>
-          <option value="Bribery">Bribery</option>
-          <option value="Carjacking">Carjacking</option>
-          <option value="Conspiracy">Conspiracy</option>
-          <option value="Disorderly Conduct">Disorderly Conduct</option>
-          <option value="Disturbing the Peace">Disturbing the Peace</option>
-          <option value="Domestic Violence">Domestic Violence</option>
-          <option value="Driving on Suspended License">Driving on Suspended License</option>
-          <option value="Driving Under Influence of Alcohol">Driving Under Influence of Alcohol</option>
-          <option value="Drug Crimes">Drug Crimes</option>
-          <option value="Embezzlement">Embezzlement</option>
-          <option value="Evading">Evading</option>
-          <option value="Extortion">Extortion</option>
-          <option value="Failure to Appear">Failure to Appear</option>
-          <option value="False Imprisonment">False Imprisonment</option>
-          <option value="First Degree Burglary">First Degree Burglary</option>
-          <option value="Forgery">Forgery</option>
-          <option value="Fraud">Fraud</option>
-          <option value="Hate Crimes">Hate Crimes</option>
-          <option value="Hit and Run">Hit and Run</option>
-          <option value="Identity Theft">Identity Theft</option>
-          <option value="Indecent Exposure">Indecent Exposure</option>
-          <option value="Insurance Fraud">Insurance Fraud</option>
-          <option value="Kidnapping">Kidnapping</option>
-          <option value="Manslaughter">Manslaughter</option>
-          <option value="Mayhem">Mayhem</option>
-          <option value="Minor in Possession">Minor in Possession</option>
           <option value="Other">Other</option>
-          <option value="Perjury">Perjury</option>
-          <option value="Prostitution">Prostitution</option>
-          <option value="Public Intoxication">Public Intoxication</option>
-          <option value="Rape">Rape</option>
-          <option value="Resisting Arrest">Resisting Arrest</option>
-          <option value="Robbery">Robbery</option>
-          <option value="Second Degree Burglary">Second Degree Burglary</option>
-          <option value="Shoplifting">Shoplifting</option>
-          <option value="Stalking">Stalking</option>
-          <option value="Statutory Rape">Statutory Rape</option>
-          <option value="Terrorism">Terrorism</option>
-          <option value="Theft / Larceny">Theft / Larceny</option>
-          <option value="Trespass">Trespass</option>
-          <option value="Vandalism">Vandalism</option>
-          <option value="Weapons">Weapons</option>
+          <option value="Los Angeles County">Los Angeles County</option>
+          <option value="San Bernadino County">San Bernadino County</option>
+          <option value="San Diego County">San Diego County</option>
         </select>
+      </div>
     </div>
 <!-- Button -->
     <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
-    </div>
+  </div>
 </form>
 
 <script>
@@ -208,7 +165,6 @@
   }, false);
 }());
 </script>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

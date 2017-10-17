@@ -39,17 +39,18 @@
 </nav>
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
-    <h1 class="display">Get a <strong>Free</strong></h1>
-    <h1>Quote Now!!</h1>
+  <div class="bannerText">
+    <span id="estText">Get a <strong>Free</strong><br />Estimate Now!!</span>
+  </div>
 </div>
 <!-- Form -->
-<form method="post" action="/" class="container" id="needs-validation" novalidate>
+<form method="post" action="/" class="form-control" id="needs-validation" novalidate>
 
 <!-- City Arrested In -->
 	  <div class="form-group">
-	      <label class="mr-sm-2" for="inlineFormCustomSelect">City Arrested In</label>
-	      <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="city" required>
-	        <option selected>Choose...</option>
+	      <label class="mr-sm-2">City Arrested In</label>
+	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
+	        <option value="" selected>Choose...</option>
 	        <option value="Aliso Viejo">Aliso Viejo</option>
 	        <option value="Anaheim">Anaheim</option>
 	        <option value="Brea">Brea</option>
@@ -81,14 +82,17 @@
 	        <option value="Stanton">Stanton</option>
 	        <option value="Villa Park">Villa Park</option>
 	        <option value="Westminster">Westminster</option>
-	        <option value="Yorba Linda">Yorba Linda</option>
+	        <option value="Other">Other</option>
+	       	<option value="Los Angeles County">Los Angeles County</option>
+	        <option value="San Bernadino County">San Bernadino County</option>
+	        <option value="San Diego County">San Diego County</option>
 	      </select>
 	  </div>
 <!-- Crime/Charge -->
 	  <div class="form-group">
-	      <label class="mr-sm-2" for="inlineFormCustomSelect">Crime/Charge</label>
-	      <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="crime" required>
-	        <option selected>Choose...</option>
+	      <label class="mr-sm-2">Crime/Charge</label>
+	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="crime">
+	        <option value="" selected>Choose...</option>
 	        <option value="Aggrevated Assault">Aggrevated Assault</option>
 	        <option value="Arson">Arson</option>
 	        <option value="Assault ">Assault </option>
@@ -139,9 +143,9 @@
 	  </div>
 <!-- Felony or Misdemeanor -->
 	  <div class="form-group">
-	      <label class="mr-sm-2" for="inlineFormCustomSelect">Felony or Misdemeanor</label>
-	      <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType" required>
-	        <option selected>Choose...</option>
+	      <label class="mr-sm-2">Felony or Misdemeanor</label>
+	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
+	        <option value="" selected>Choose...</option>
 	        <option value="Felony">Felony</option>
 	        <option value="Misdemeanor">Misdemeanor</option>
 	      </select>
@@ -149,27 +153,22 @@
 <!-- First and Last Name of Arrested-->
 	  <div class="row">
 	    <div class="col">
-	      <input type="text" name="firstName" class="form-control form-control-lg" placeholder="First name" required>
-		    <div class="invalid-feedback">
-	        	Please provide your first name.
-	      	</div>
+	    	<label class="col-form-label">First Name</label>
+	     	<input type="text" name="firstName" class="form-control" required>
 	    </div>
 	    <div class="col">
-	      <input type="text" name="lastName" class="form-control form-control-lg" placeholder="Last name" required>
-		    <div class="invalid-feedback">
-	        	Please provide your last name.
-	      	</div>
+	    	<label class="col-form-label">Last Name</label>
+	      	<input type="text" name="lastName" class="form-control" required>
 	    </div>
+	  </div>
 <!-- Contact Email -->
+	  <div class="row">
 		<div class="col">
-	      <label class="sr-only" for="inlineFormInput">Contact Email</label>
-	      <input type="email" name="email" class="form-control form-control-lg form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Email" required>
-		      <div class="invalid-feedback">
-	        	Please provide a valid email.
-	      	  </div>
+	      <label class="col-form-label">Contact Email</label>
+	      <input type="email" name="email" class="form-control" required>
 	    </div>
 <!-- Button -->
-		<button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Get Quote</button>
+		<button type="submit" class="btn btn-outline-primary" id="get-est-btn">Get Estimate</button>
 	  </div>
 </form>
 
