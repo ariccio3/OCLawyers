@@ -91,7 +91,7 @@
 <!-- Crime/Charge -->
 	  <div class="form-group">
 	      <label class="mr-sm-2">Crime/Charge</label>
-	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="crime">
+	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate(this.id, 'chargeType')">
 	        <option value="" selected>Choose...</option>
 	        <option value="Aggrevated Assault">Aggrevated Assault</option>
 	        <option value="Arson">Arson</option>
@@ -145,9 +145,9 @@
 	  <div class="form-group">
 	      <label class="mr-sm-2">Felony or Misdemeanor</label>
 	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
-	        <option value="" selected>Choose...</option>
+<!-- 	        <option value="" selected>Choose...</option>
 	        <option value="Felony">Felony</option>
-	        <option value="Misdemeanor">Misdemeanor</option>
+	        <option value="Misdemeanor">Misdemeanor</option> -->
 	      </select>
 	  </div>
 <!-- First and Last Name of Arrested-->
