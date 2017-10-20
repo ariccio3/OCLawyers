@@ -37,7 +37,7 @@ h3 {
 /*Logo end*/
 
 body {
-	padding-bottom: 5%;
+	padding-bottom: 25%;
 }
 
 #needs-validation {
@@ -80,6 +80,18 @@ body {
 
 span a {
 	color: black;
+}
+
+.contactBtn {
+	text-align: center;
+	margin-left: 45%;
+	position: relative;
+}
+
+.btn-outline-dark {
+	font-size: 3vw;
+	margin-top: 20%;
+	position: absolute;
 }
 /*Estimate Banner Text End*/
 

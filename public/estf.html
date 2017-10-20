@@ -33,10 +33,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana">Check us out on Yelp! »</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank"><img src="assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
+        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank">Check us out on Yelp! » <img src="assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
       </li>
     </ul>
   </div>
@@ -48,11 +45,15 @@
     <span id="monthly">$995/month</span><br />
     <span id="total">$995/down (Total estimate $5,495-$7,495)</span>
   </div>
+  <div class="contactBtn">
+      <a href="#formDiv" role="button" class="btn btn-outline-dark"><strong>Contact<br>Now!</strong></a>
+  </div> 
 </div>
 <!-- Form -->
-<h3>Have an Expert Lawyer Contact You ASAP!</h3><br />
-
-<form method="post" action="/est" class="form-control" id="needs-validation" novalidate>
+<div id="formDiv">
+  <h3>Have an Expert Lawyer Contact You ASAP!</h3><br />
+</div>
+<form method="post" action="/est" class="form-control" id="needs-validation" novalidate><br />
 <!-- First and Last Name of Contact Person-->
     <div class="row">
       <div class="col">
@@ -63,7 +64,7 @@
       <label class="mr-sm-2">Last Name</label>
         <input type="text" name="lastName" class="form-control form-control-lg" required>
       </div>
-    </div>
+    </div><br />
 <!-- Contact Phone Number and Best Time-->
     <div class="row">
       <div class="col">
@@ -79,7 +80,7 @@
           <option value="ASAP">ASAP</option>
         </select> 
       </div>
-    </div>  
+    </div><br /> 
 <!-- Date of Birth & Date of Arrest-->
     <div class="row">
       <div class="col">
@@ -90,7 +91,7 @@
       <label class="mr-sm-2">Date Arrested</label>
         <input type="text" name="dateArrested" class="form-control form-control-lg">
       </div>
-    </div>    
+    </div><br />  
 <!-- Multiple Offences & Prior Charges-->
     <div class="row">
       <div class="col">
@@ -101,7 +102,7 @@
       <label class="mr-sm-2">List Any Prior Convictions</label>
         <input type="text" name="priors" class="form-control form-control-lg">
       </div>
-    </div>
+    </div><br />
 <!-- City of Residence -->
   <div class="row">
     <div class="col">
@@ -150,7 +151,7 @@
     </div>
 <!-- Button -->
     <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
-  </div>
+  </div><br />
 </form>
 
 <script>
