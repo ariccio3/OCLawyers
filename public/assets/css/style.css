@@ -102,6 +102,19 @@ span a {
 #get-est-btn {
 	margin-top: 30px;
 	margin-right: 15px;
-  
+}
+
+@keyframes flash {
+  from, 50%, to {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
 }
 

@@ -74,10 +74,6 @@ router.post("/est", (req, res) => {
       <li>City of Residence: ${req.body.city}</li>
       <li>Phone: ${req.body.phone}</li>
       <li>Best Time: ${req.body.bestTime}</li>
-      <li>City Arrested: ${sessionStorage.getItem("city")}</li>
-      <li>Email: ${sessionStorage.getItem("email")}</li>
-      <li>Arrested Charge: sessionStorage.getItem("crime")</li>
-      <li>Charge Type: sessionStorage.getItem("chargeType")</li>
       <li>DOB: ${req.body.dob}</li>
       <li>Date Arrested: ${req.body.dateArrested}</li>
       <li>Additional Charges: ${req.body.multipleOff}</li>
