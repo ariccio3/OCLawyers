@@ -12,17 +12,29 @@
 	text-align: right;
 }
 
-/*h1 {
-	margin-right: 35px;
-}*/
+/*Logo*/
+#logoOC {
+	background-color: #ea7724;
+	font-family: 'Abel', sans-serif;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#logoPipe {
+	font-family: 'Abel', sans-serif;
+}
 
 h3 {
 	text-align: center;
 }
 
 .navbar-brand {
-	font-size: 2em;
+	font-size: 2.4em;
+	font-family: 'Abel', sans-serif;
+	padding-bottom: 0px;
+	padding-top: 0px;
 }
+/*Logo end*/
 
 body {
 	padding-bottom: 5%;

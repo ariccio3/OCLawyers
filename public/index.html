@@ -12,22 +12,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
     <title>OC Lawyers</title>
   </head>
 <body>
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  	<a class="navbar-brand" href="/index.html">OC Lawyers</a>
+  	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
   	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   	</button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-      <!--   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana">Check us out on Yelp! »</a>
       </li>
@@ -145,9 +149,6 @@
 	  <div class="form-group">
 	      <label class="mr-sm-2">Felony or Misdemeanor</label>
 	      <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
-<!-- 	        <option value="" selected>Choose...</option>
-	        <option value="Felony">Felony</option>
-	        <option value="Misdemeanor">Misdemeanor</option> -->
 	      </select>
 	  </div>
 <!-- First and Last Name of Arrested-->
@@ -173,7 +174,6 @@
 </form>
 
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
   "use strict";
   window.addEventListener("load", function() {
@@ -189,6 +189,33 @@
 }());
 </script>
 
+<script type="text/javascript">
+	    // Capture Button Click
+    $("#get-est-btn").on("click", function(event) {
+      event.preventDefault();
+
+      // Capture user inputs and store them into variables
+      var city = $("#city").val().trim();
+      var email = $("#email").val().trim();
+      var crime = $("#crime").val().trim();
+      var chargeType = $("#chargeType").val().trim();
+
+      // Console log each of the user inputs to confirm we are receiving them
+      console.log(name);
+      console.log(email);
+      console.log(age);
+      console.log(comment);
+
+      // Clear sessionStorage
+      sessionStorage.clear();
+
+      // Store all content into sessionStorage
+      sessionStorage.setItem("city", city);
+      sessionStorage.setItem("email", email);
+      sessionStorage.setItem("crime", crime);
+      sessionStorage.setItem("chargeType", chargeType);
+    });
+</script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
