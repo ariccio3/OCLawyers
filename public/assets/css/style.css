@@ -50,12 +50,11 @@ body {
     width: 100%;
 }
 
-#formDiv h6 {
+#formHeader {
 	text-align: justify;
     text-justify: inter-word;
-    padding-top: 4%;
-    padding-left: 5%;
-    padding-right: 5%;
+	padding: 4%;
+    font-size: 2.5vw;
 }
 
 label {
@@ -72,6 +71,11 @@ label {
 .bannerText {
 	text-align: left;
 	margin-left: 45%;
+}
+
+.indexBannerText {
+	text-align: left;
+	margin-left: 50%;	
 }
 
 #avg {
