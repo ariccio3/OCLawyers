@@ -38,7 +38,7 @@ body {
 
 /*Form*/
 #needs-validation {
-	max-width: 700px;
+	max-width: 80%;
 	margin: auto;
 	margin-top: 2%;
 }
