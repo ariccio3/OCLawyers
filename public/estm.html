@@ -52,7 +52,7 @@
   </div> -->
 </div>
 <div id="formDiv">
-  <h5>Our Attorneys fight to get charges reduced or dismissed for our clients. To speak with one of our Attorneys, please enter the required information below.</h5><br />
+  <h6>Our Attorneys fight to get charges reduced or dismissed for our clients. To speak with one of our Attorneys, please enter the required information below.</h6><br />
 </div>
 <!-- Form -->
 <form method="post" action="/est" class="form-control" id="needs-validation" novalidate><br />
@@ -60,22 +60,22 @@
     <div class="row">
       <div class="col">
       <label class="mr-sm-2">First Name</label>
-        <input type="text" name="firstName" class="form-control form-control-lg" required>
+        <input type="text" name="firstName" class="form-control" required>
       </div>
       <div class="col">
       <label class="mr-sm-2">Last Name</label>
-        <input type="text" name="lastName" class="form-control form-control-lg" required>
+        <input type="text" name="lastName" class="form-control" required>
       </div>
     </div><br />
 <!-- Contact Phone Number and Best Time-->
     <div class="row">
       <div class="col">
       <label class="mr-sm-2">Phone Number</label>
-        <input type="text" name="phone" class="form-control form-control-lg" required>
+        <input type="text" name="phone" class="form-control" required>
       </div>
       <div class="col">
         <label class="mr-sm-2">Best Time to Call</label>
-        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
+        <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
           <option value="" selected>Choose...</option>
           <option value="AM">AM</option>
           <option value="PM">PM</option>
@@ -87,18 +87,18 @@
     <div class="row">
       <div class="col">
       <label class="mr-sm-2">Date of Birth</label>
-        <input type="text" name="dob" class="form-control form-control-lg">
+        <input type="text" name="dob" class="form-control">
       </div>
       <div class="col">
       <label class="mr-sm-2">Date Arrested</label>
-        <input type="text" name="dateArrested" class="form-control form-control-lg">
+        <input type="text" name="dateArrested" class="form-control">
       </div>
     </div><br /> 
 <!-- Crime/Charge -->
     <div class="row">
       <div class="col">
-        <label class="mr-sm-2">Crime/Charge</label>
-        <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate('crime','chargeType')">
+        <label class="mr-sm-2">Arresting Charge</label>
+        <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate('crime','chargeType')">
           <option value="" selected>Choose...</option>
           <option value="Aggrevated Assault">Aggrevated Assault</option>
           <option value="Arson">Arson</option>
@@ -151,19 +151,19 @@
 <!-- Felony or Misdemeanor -->
       <div class="col">
         <label class="mr-sm-2">Felony or Misdemeanor</label>
-        <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
+        <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
         </select>
       </div>  
     </div><br />     
 <!-- Multiple Offences & Prior Charges-->
     <div class="row">
       <div class="col">
-      <label class="mr-sm-2">List Additional Charges</label>
-        <input type="text" name="multipleOff" class="form-control form-control-lg">
+      <label class="mr-sm-2">Additional Charges</label>
+        <input type="text" name="multipleOff" class="form-control">
       </div>
       <div class="col">
-      <label class="mr-sm-2">List Any Prior Convictions</label>
-        <input type="text" name="priors" class="form-control form-control-lg">
+      <label class="mr-sm-2">Prior Convictions</label>
+        <input type="text" name="priors" class="form-control">
       </div>
     </div><br />
 <!-- City of Residence -->
@@ -171,7 +171,7 @@
     <div class="col">
       <div class="form-group">
         <label class="mr-sm-2">City of Residence</label>
-        <select class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
+        <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
           <option selected>Choose...</option>
           <option value="Aliso Viejo">Aliso Viejo</option>
           <option value="Anaheim">Anaheim</option>
@@ -213,7 +213,7 @@
       </div>
     </div>
 <!-- Button -->
-    <button type="submit" class="btn btn-outline-primary btn-lg" id="get-est-btn">Submit</button>
+    <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
   </div><br />
 </form>
 

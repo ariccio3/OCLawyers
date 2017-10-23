@@ -51,11 +51,16 @@ body {
     width: 100%;
 }
 
-#formDiv h5 {
+#formDiv h6 {
 	padding: 5%;
 	text-align: justify;
     text-justify: inter-word;
 	display: table-cell;
+
+}
+
+label {
+	font-size: 2vw;
 }
 /*Form end*/
 
