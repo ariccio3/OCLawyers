@@ -28,7 +28,7 @@
 <!-- Navigation -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
-  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  	<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   	</button>
 
@@ -38,23 +38,23 @@
         <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank">Check us out on Yelp! » <img src="assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
       </li>
     </ul>
-  </div>
+  </div> -->
 </nav>
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid" id="quoteBanner">
   <div class="bannerText">
-    <span id="avg">Based on the info you submitted, the average cost for our service</span><br />
-    <span id="monthly" class="animated flash">$995/month</span><br />
-    <span id="total">$995/down (Total estimate $5,495-$7,495)</span>
+    <span id="avg">Based on info you submitted, the average cost for our services are</span><br />
+    <span id="monthly" class="animated flash">$495-$695<span id="termText"> down/per mo</span></span><br />
+    <span id="total">Total estimate $2,995-$5,495</span>
   </div>
-  <div class="contactBtn">
+<!--   <div class="contactBtn">
       <a href="#formDiv" role="button" class="btn btn-outline-dark"><strong>Contact<br>Now!</strong></a>
-  </div> 
+  </div>  -->
+</div>
+<div id="formDiv">
+  <h5>Our Attorneys fight to get charges reduced or dismissed for our clients. To speak with one of our Attorneys, please enter the required information below.</h5><br />
 </div>
 <!-- Form -->
-<div id="formDiv">
-  <h3>Have an Expert Lawyer Contact You ASAP!</h3><br />
-</div>
 <form method="post" action="/est" class="form-control" id="needs-validation" novalidate><br />
 <!-- First and Last Name of Contact Person-->
     <div class="row">
@@ -93,7 +93,68 @@
       <label class="mr-sm-2">Date Arrested</label>
         <input type="text" name="dateArrested" class="form-control form-control-lg">
       </div>
-    </div><br />  
+    </div><br />
+<!-- Crime/Charge -->
+    <div class="row">
+      <div class="col">
+        <label class="mr-sm-2">Crime/Charge</label>
+        <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate('crime','chargeType')">
+          <option value="" selected>Choose...</option>
+          <option value="Aggrevated Assault">Aggrevated Assault</option>
+          <option value="Arson">Arson</option>
+          <option value="Assault">Assault </option>
+          <option value="Battery">Battery </option>
+          <option value="Bribery">Bribery</option>
+          <option value="Carjacking">Carjacking</option>
+          <option value="Conspiracy">Conspiracy</option>
+          <option value="Disorderly Conduct">Disorderly Conduct</option>
+          <option value="Disturbing the Peace">Disturbing the Peace</option>
+          <option value="Domestic Violence">Domestic Violence</option>
+          <option value="Driving on Suspended License">Driving on Suspended License</option>
+          <option value="Driving Under Influence of Alcohol">Driving Under Influence of Alcohol</option>
+          <option value="Drug Crimes">Drug Crimes</option>
+          <option value="Embezzlement">Embezzlement</option>
+          <option value="Evading">Evading</option>
+          <option value="Extortion">Extortion</option>
+          <option value="Failure to Appear">Failure to Appear</option>
+          <option value="False Imprisonment">False Imprisonment</option>
+          <option value="First Degree Burglary">First Degree Burglary</option>
+          <option value="Forgery">Forgery</option>
+          <option value="Fraud">Fraud</option>
+          <option value="Hate Crimes">Hate Crimes</option>
+          <option value="Hit and Run">Hit and Run</option>
+          <option value="Identity Theft">Identity Theft</option>
+          <option value="Indecent Exposure">Indecent Exposure</option>
+          <option value="Insurance Fraud">Insurance Fraud</option>
+          <option value="Kidnapping">Kidnapping</option>
+          <option value="Manslaughter">Manslaughter</option>
+          <option value="Mayhem">Mayhem</option>
+          <option value="Minor in Possession">Minor in Possession</option>
+          <option value="Other">Other</option>
+          <option value="Perjury">Perjury</option>
+          <option value="Prostitution">Prostitution</option>
+          <option value="Public Intoxication">Public Intoxication</option>
+          <option value="Rape">Rape</option>
+          <option value="Resisting Arrest">Resisting Arrest</option>
+          <option value="Robbery">Robbery</option>
+          <option value="Second Degree Burglary">Second Degree Burglary</option>
+          <option value="Shoplifting">Shoplifting</option>
+          <option value="Stalking">Stalking</option>
+          <option value="Statutory Rape">Statutory Rape</option>
+          <option value="Terrorism">Terrorism</option>
+          <option value="Theft / Larceny">Theft / Larceny</option>
+          <option value="Trespass">Trespass</option>
+          <option value="Vandalism">Vandalism</option>
+          <option value="Weapons">Weapons</option>
+        </select>
+      </div>
+<!-- Felony or Misdemeanor -->
+      <div class="col">
+        <label class="mr-sm-2">Felony or Misdemeanor</label>
+        <select required class="form-control form-control-lg custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
+        </select>
+      </div>  
+    </div><br />    
 <!-- Multiple Offences & Prior Charges-->
     <div class="row">
       <div class="col">

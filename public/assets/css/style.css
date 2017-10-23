@@ -4,12 +4,16 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+body {
+	padding-bottom: 25%;
+}
+
 .jumbotron {
 	background: url("../img/gavel.jpg") no-repeat;
- 	background-size: cover;
-	padding-bottom: 25%;
+ 	background-size: 100% 100%;
 	margin-top: 70px;
 	text-align: right;
+	margin-bottom: 0;
 }
 
 /*Logo*/
@@ -24,10 +28,6 @@
 	font-family: 'Abel', sans-serif;
 }
 
-h3 {
-	text-align: center;
-}
-
 .navbar-brand {
 	font-size: 2.4em;
 	font-family: 'Abel', sans-serif;
@@ -36,14 +36,28 @@ h3 {
 }
 /*Logo end*/
 
-body {
-	padding-bottom: 25%;
-}
-
+/*Form*/
 #needs-validation {
 	max-width: 700px;
 	margin: auto;
+	margin-top: 2%;
 }
+
+#formDiv {
+    color: white;
+    background-color: #343a40;
+    vertical-align: center;
+    display: table;
+    width: 100%;
+}
+
+#formDiv h5 {
+	padding: 5%;
+	text-align: justify;
+    text-justify: inter-word;
+	display: table-cell;
+}
+/*Form end*/
 
 .btn-lg {
 	margin: auto;
@@ -53,50 +67,55 @@ body {
 /*Estimate Banner Text*/
 .bannerText {
 	text-align: left;
-	margin-left: 52%;
+	margin-left: 45%;
 }
 
 #avg {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.7);
 	font-size: 1.47vw;
 	padding: 1%;
 }
 
 #monthly {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.7);
 	font-size: 8vw;
 	padding: 1%;
 }
 
 #total {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.7);
 	font-size: 2.25vw;
 	padding: 1%;
 }
 
 #estText {
-	font-size: 6vw;
+	font-size: 4vw;
+}
+
+#termText {
+		font-size: 2vw;
 }
 
 span a {
 	color: black;
+	text-decoration: none;
 }
 
 .contactBtn {
 	text-align: center;
-	margin-left: 45%;
-	position: relative;
 }
 
 .btn-outline-dark {
 	font-size: 3vw;
-	margin-top: 20%;
-	position: absolute;
 }
 /*Estimate Banner Text End*/
 
 .card {
 	min-height: 285px;
+}
+
+.card-header {
+	font-size: 1.75vw;
 }
 
 #get-est-btn {

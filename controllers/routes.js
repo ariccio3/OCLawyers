@@ -76,6 +76,8 @@ router.post("/est", (req, res) => {
       <li>Best Time: ${req.body.bestTime}</li>
       <li>DOB: ${req.body.dob}</li>
       <li>Date Arrested: ${req.body.dateArrested}</li>
+      <li>Arresting Charge: ${req.body.crime}</li>
+      <li>Type: ${req.body.chargeType}</li>      
       <li>Additional Charges: ${req.body.multipleOff}</li>
       <li>Prior Convictions: ${req.body.priors}</li>
     </ul>
