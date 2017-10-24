@@ -68,7 +68,7 @@ label {
 /*Estimate Banner Text*/
 .bannerText {
 	text-align: left;
-	margin-left: 45%;
+	margin-left: 40%;
 }
 
 .indexBannerText {
@@ -99,7 +99,7 @@ label {
 }
 
 #termText {
-		font-size: 2vw;
+	font-size: 2vw;
 }
 
 span a {
@@ -113,6 +113,12 @@ span a {
 
 .btn-outline-dark {
 	font-size: 3vw;
+}
+
+#thankyou {
+	background-color: rgba(255,255,255,0.7);
+	font-size: 2vw;
+	padding: 1%;
 }
 /*Estimate Banner Text End*/
 
@@ -153,5 +159,24 @@ span a {
 	}
 	#estText {
 		font-size: 3vw;		
+	}
+	.card-header {
+		font-size: 1.25vw;				
+	}
+	#avg {
+		font-size: 1.25vw;
+	}
+	#monthly {
+		font-size: 6vw;
+	}
+	#total {
+		font-size: 1.5vw;
+		margin-right: 30%;
+	}
+	#formHeader {
+		font-size: 2vw;
+	}
+	#thankyou {
+		line-height: 200%;
 	}
 }
