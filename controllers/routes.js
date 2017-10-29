@@ -3,6 +3,7 @@ var router = express.Router();
 var leads = require("../models/leads.js");
 var app = express();
 var nodemailer = require('nodemailer');
+var babel = require("babel-register");
 
 // Create the router for the app, and export the router at the 
 //end of your file.
@@ -40,7 +41,7 @@ router.post("/", (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"OC Lawyers" <ar3home@gmail.com>', // sender address
-        to: 'ar3home@gmail.com, jreed@sportchrome.com', // list of receivers
+        to: 'ar3home@gmail.com', // list of receivers
         subject: 'New OC Lawyers Lead ✔', // Subject line
         text: '', // plain text body
         html: output // html body
@@ -99,7 +100,7 @@ router.post("/est", (req, res) => {
     // setup email data with unicode symbols
     let mailOptions = {
         from: '"OC Lawyers" <ar3home@gmail.com>', // sender address
-        to: 'ar3home@gmail.com, jreed@sportchrome.com', // list of receivers
+        to: 'ar3home@gmail.com', // list of receivers
         subject: 'OC Lawyers Lead to Contact ☏', // Subject line
         text: '', // plain text body
         html: output // html body
