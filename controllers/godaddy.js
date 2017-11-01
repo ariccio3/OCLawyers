@@ -29,7 +29,7 @@ router.post('/est', function(req, res) {
     // setup email data with unicode symbols
     var mailOptions = {
         from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
-        to: 'oclawyers@sportchrome.com, ar3works@gmail.com', // list of receivers
+        to: 'oclawyers@sportchrome.com', // list of receivers
         subject: 'New OC Lawyers Lead', // Subject line
         text: '', // plain text body
         html: output // html body
@@ -73,7 +73,7 @@ router.post("/contact", function(req, res) {
     // setup email data with unicode symbols
     var mailOptions = {
         from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
-        to: 'oclawyers@sportchrome.com, ar3works@gmail.com', // list of receivers
+        to: 'oclawyers@sportchrome.com', // list of receivers
         subject: 'OC Lawyers Lead to Contact', // Subject line
         text: '', // plain text body
         html: output // html body
