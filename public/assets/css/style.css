@@ -71,6 +71,12 @@ label {
 	margin-left: 40%;
 }
 
+.TYbannerText {
+	text-align: left;
+	margin-left: 40%;
+	background-color: rgba(255,255,255,0.7);
+}
+
 .indexBannerText {
 	text-align: left;
 	margin-left: 50%;	
@@ -116,7 +122,6 @@ span a {
 }
 
 #thankyou {
-	background-color: rgba(255,255,255,0.7);
 	font-size: 2vw;
 	padding: 1%;
 }
@@ -187,8 +192,5 @@ span a {
 	}
 	#thankyou {
 		font-size: 3.25vw;
-	}
-	.card {
-		max-width: 600px;
 	}
 }
