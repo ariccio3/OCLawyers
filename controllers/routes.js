@@ -11,7 +11,7 @@ router.get("/", function(req, res) {
     res.render("index");
 });
 // POST request to email index.html form to Jon
-router.post("/", (req, res) => {
+router.post("/est", (req, res) => {
   console.log(req.body);
   const output = `
     <p> You have a new lead</p>
@@ -26,12 +26,12 @@ router.post("/", (req, res) => {
   `;
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 587,
+        host: 'smtpout.secureserver.net',
+        port: 80,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'ar3home@gmail.com', // generated ethereal user
-            pass: 'r1tspy1t'  // generated ethereal password
+            user: 'oclawyers@sportchrome.com', // generated ethereal user
+            pass: '123456'  // generated ethereal password
         },
         tls: {
           rejectUnauthorized:false
@@ -40,9 +40,9 @@ router.post("/", (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"OC Lawyers" <ar3home@gmail.com>', // sender address
-        to: 'ar3home@gmail.com', // list of receivers
-        subject: 'New OC Lawyers Lead ✔', // Subject line
+        from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
+        to: 'oclawyers@sportchrome.com', // list of receivers
+        subject: 'New OC Lawyers Lead', // Subject line
         text: '', // plain text body
         html: output // html body
     };
@@ -65,7 +65,7 @@ router.post("/", (req, res) => {
 });  
 
 // POST request to email index.html form to Jon
-router.post("/est", (req, res) => {
+router.post("/contact", (req, res) => {
   console.log(req.body);
   const output = `
     <p>New customer requested a call</p>
@@ -85,12 +85,12 @@ router.post("/est", (req, res) => {
   `;
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 587,
+        host: 'smtpout.secureserver.net',
+        port: 80,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'ar3home@gmail.com', // generated ethereal user
-            pass: 'r1tspy1t'  // generated ethereal password
+            user: 'oclawyers@sportchrome.com', // generated ethereal user
+            pass: '123456'  // generated ethereal password
         },
         tls: {
           rejectUnauthorized:false
@@ -99,9 +99,9 @@ router.post("/est", (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"OC Lawyers" <ar3home@gmail.com>', // sender address
-        to: 'ar3home@gmail.com', // list of receivers
-        subject: 'OC Lawyers Lead to Contact ☏', // Subject line
+        from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
+        to: 'oclawyers@sportchrome.com', // list of receivers
+        subject: 'OC Lawyers Lead to Contact', // Subject line
         text: '', // plain text body
         html: output // html body
     };

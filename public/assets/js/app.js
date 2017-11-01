@@ -60,4 +60,4 @@ function populate (s1,s2) {
 			newOption.innerHTML = pair[1]; //Assigns index 1 in each array as the visible html
 			s2.options.add(newOption); //Appends the new <option> on the <select> menu
 		}
-	};
+};

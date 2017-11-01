@@ -22,7 +22,6 @@
     "babel-register": "^6.26.0",
     "body-parser": "^1.18.2",
     "express": "^4.16.1",
-    "mysql": "^2.15.0",
     "nodemailer": "^4.1.3"
   }
 }
