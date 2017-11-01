@@ -1,6 +1,5 @@
 var express = require("express");
 var router = express.Router();
-var leads = require("../models/leads.js");
 var app = express();
 var nodemailer = require("nodemailer");
 
