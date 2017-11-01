@@ -75,6 +75,8 @@ label {
 	text-align: left;
 	margin-left: 40%;
 	background-color: rgba(255,255,255,0.7);
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .indexBannerText {
@@ -124,7 +126,6 @@ span a {
 #thankyou {
 	font-size: 2vw;
 	padding: 1%;
-	text-align: center;
 }
 /*Estimate Banner Text End*/
 
