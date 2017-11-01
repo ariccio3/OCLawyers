@@ -183,6 +183,10 @@ span a {
 
 @media screen and (max-width: 768px) {
 	.card-header {
-		font-size: 2.5vw;
+		font-size: 3vw;
+	}
+
+	#thankyou {
+		font-size: 3vw;
 	}
 }
