@@ -1,5 +1,5 @@
 * {
-	/*border: solid red 1px;*/
+	border: solid red 1px;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
@@ -75,12 +75,14 @@ label {
 	text-align: left;
 	margin-left: 40%;
 	background-color: rgba(255,255,255,0.7);
-	padding: 10px;
+	padding: 1%;
 }
 
 .indexBannerText {
 	text-align: left;
-	margin-left: 50%;	
+	margin-left: 50%;
+	background-color: rgba(255,255,255,0.7);
+	padding: 1%;
 }
 
 #avg {
@@ -160,11 +162,11 @@ span a {
 		font-size: 1.5vw;
 	}
 	.indexBannerText {
-		margin-right: 20%;
+		margin-right: 10%;
 		margin-left: 55%;
 	}
 	#estText {
-		font-size: 3vw;		
+		font-size: 2.5vw;		
 	}
 	.card-header {
 		font-size: 1.25vw;				
@@ -193,5 +195,8 @@ span a {
 	}
 	#thankyou {
 		font-size: 3.25vw;
+	}
+	label {
+		font-size: 2.75vw;
 	}
 }
