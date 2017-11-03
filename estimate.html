@@ -23,18 +23,22 @@
     <title>OC Lawyers</title>
   </head>
 <body>
+<div id="container">
+  <div id="header">
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
-</nav>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+	  	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
+	</nav>
+</div>
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid">
-  <div class="indexBannerText">
-    <span id="estText">Enter your information below to see a cost estimate on your screen instantly</span>
-  </div>
-</div><br>
+  <div id="body">
+	<div class="jumbotron jumbotron-fluid">
+	  <div class="indexBannerText">
+	    <span id="estText">Enter your information below to see a cost estimate on your screen instantly</span>
+	  </div>
+	</div><br>
 <!-- Form -->
-<form method="POST" action="est" class="form-control" id="needs-validation" novalidate>
+	<form method="POST" action="est" class="form-control" id="needs-validation" novalidate>
 
 <!-- City Arrested In -->
 	  <div class="form-group">
@@ -157,7 +161,13 @@
 <!-- Button -->
 		<button type="submit" class="btn btn-outline-primary" id="get-est-btn">Get Estimate</button>
 	  </div>
-</form>
+	</form>
+  </div> <!--Body id end-->
+
+  <div id="footer">
+    <p>Patent Pending technology developed by Inbound Legal, a division of SC INC.</p>
+  </div>
+</div>
 
 <script>
 (function() {

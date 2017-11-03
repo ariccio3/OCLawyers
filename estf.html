@@ -25,194 +25,193 @@
   <title>OC Lawyers</title>
   </head>
 <body>
+<div id="container">
+  <div id="header">
 <!-- Navigation -->
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-  	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
-  	<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  	</button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.yelp.com/biz/oc-lawyers-santa-ana" target="_blank">Check us out on Yelp! » <img src="public/assets/img/yelp.svg" alt="yelp" width="40" height="40"></a>
-      </li>
-    </ul>
-  </div> -->
-</nav>
-<!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid" id="quoteBanner">
-  <div class="bannerText">
-    <span id="avg">Based on info you submitted, the average cost for our services are</span><br>
-    <span id="monthly" class="animated flash">$495-$695<span id="termText"> down/per mo</span></span><br>
-    <span id="total">Total estimate $2,995-$5,495</span><br>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      	<a class="navbar-brand" href="/index.html"><span id="logoOC">OC</span><span id="logoPipe">&hairsp;|&hairsp;</span>Lawyers</a>
+    </nav>
   </div>
-</div>
-<div id="formDiv">
-  <p id="formHeader">Our Attorneys fight to get charges reduced or dismissed for our clients. To speak with one of our Attorneys, please enter the required information below.</p>
-</div>
-<!-- Form -->
-<form method="post" action="/contact" class="form-control" id="needs-validation" novalidate><br />
-<!-- First and Last Name of Contact Person-->
-    <div class="row">
-      <div class="col">
-      <label class="mr-sm-2">First Name</label>
-        <input type="text" name="firstName" class="form-control" required>
-      </div>
-      <div class="col">
-      <label class="mr-sm-2">Last Name</label>
-        <input type="text" name="lastName" class="form-control" required>
-      </div>
-    </div><br />
-<!-- Contact Phone Number and Best Time-->
-    <div class="row">
-      <div class="col">
-      <label class="mr-sm-2">Phone Number</label>
-        <input type="text" name="phone" class="form-control" required>
-      </div>
-      <div class="col">
-        <label class="mr-sm-2">Best Time to Call</label>
-        <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
-          <option value="" selected>Choose...</option>
-          <option value="AM">AM</option>
-          <option value="PM">PM</option>
-          <option value="ASAP">ASAP</option>
-        </select> 
-      </div>
-    </div><br> 
-<!-- Date of Birth & Date of Arrest-->
-    <div class="row">
-      <div class="col">
-      <label class="mr-sm-2">Date of Birth</label>
-        <input type="text" name="dob" class="form-control">
-      </div>
-      <div class="col">
-      <label class="mr-sm-2">Date Arrested</label>
-        <input type="text" name="dateArrested" class="form-control">
-      </div>
-    </div><br />
-<!-- Crime/Charge -->
-    <div class="row">
-      <div class="col">
-        <label class="mr-sm-2">Arresting Charge</label>
-        <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate('crime','chargeType')">
-          <option value="" selected>Choose...</option>
-          <option value="Aggrevated Assault">Aggrevated Assault</option>
-          <option value="Arson">Arson</option>
-          <option value="Assault">Assault </option>
-          <option value="Battery">Battery </option>
-          <option value="Bribery">Bribery</option>
-          <option value="Carjacking">Carjacking</option>
-          <option value="Conspiracy">Conspiracy</option>
-          <option value="Disorderly Conduct">Disorderly Conduct</option>
-          <option value="Disturbing the Peace">Disturbing the Peace</option>
-          <option value="Domestic Violence">Domestic Violence</option>
-          <option value="Driving on Suspended License">Driving on Suspended License</option>
-          <option value="Driving Under Influence of Alcohol">Driving Under Influence of Alcohol</option>
-          <option value="Drug Crimes">Drug Crimes</option>
-          <option value="Embezzlement">Embezzlement</option>
-          <option value="Evading">Evading</option>
-          <option value="Extortion">Extortion</option>
-          <option value="Failure to Appear">Failure to Appear</option>
-          <option value="False Imprisonment">False Imprisonment</option>
-          <option value="First Degree Burglary">First Degree Burglary</option>
-          <option value="Forgery">Forgery</option>
-          <option value="Fraud">Fraud</option>
-          <option value="Hate Crimes">Hate Crimes</option>
-          <option value="Hit and Run">Hit and Run</option>
-          <option value="Identity Theft">Identity Theft</option>
-          <option value="Indecent Exposure">Indecent Exposure</option>
-          <option value="Insurance Fraud">Insurance Fraud</option>
-          <option value="Kidnapping">Kidnapping</option>
-          <option value="Manslaughter">Manslaughter</option>
-          <option value="Mayhem">Mayhem</option>
-          <option value="Minor in Possession">Minor in Possession</option>
-          <option value="Other">Other</option>
-          <option value="Perjury">Perjury</option>
-          <option value="Prostitution">Prostitution</option>
-          <option value="Public Intoxication">Public Intoxication</option>
-          <option value="Rape">Rape</option>
-          <option value="Resisting Arrest">Resisting Arrest</option>
-          <option value="Robbery">Robbery</option>
-          <option value="Second Degree Burglary">Second Degree Burglary</option>
-          <option value="Shoplifting">Shoplifting</option>
-          <option value="Stalking">Stalking</option>
-          <option value="Statutory Rape">Statutory Rape</option>
-          <option value="Terrorism">Terrorism</option>
-          <option value="Theft / Larceny">Theft / Larceny</option>
-          <option value="Trespass">Trespass</option>
-          <option value="Vandalism">Vandalism</option>
-          <option value="Weapons">Weapons</option>
-        </select>
-      </div>
-<!-- Felony or Misdemeanor -->
-      <div class="col">
-        <label class="mr-sm-2">Felony or Misdemeanor</label>
-        <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
-        </select>
-      </div>  
-    </div><br />    
-<!-- Multiple Offences & Prior Charges-->
-    <div class="row">
-      <div class="col">
-      <label class="mr-sm-2">Additional Charges</label>
-        <input type="text" name="multipleOff" class="form-control">
-      </div>
-      <div class="col">
-      <label class="mr-sm-2">Prior Convictions</label>
-        <input type="text" name="priors" class="form-control">
-      </div>
-    </div><br />
-<!-- City of Residence -->
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <label class="mr-sm-2">City of Residence</label>
-        <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
-          <option selected>Choose...</option>
-          <option value="Aliso Viejo">Aliso Viejo</option>
-          <option value="Anaheim">Anaheim</option>
-          <option value="Brea">Brea</option>
-          <option value="Buena Park">Buena Park</option>
-          <option value="Costa Mesa">Costa Mesa</option>
-          <option value="Cypress">Cypress</option>
-          <option value="Dana Point">Dana Point</option>
-          <option value="Fountain Valley">Fountain Valley</option>
-          <option value="Fullerton">Fullerton</option>
-          <option value="Garden Grove">Garden Grove</option>
-          <option value="Huntington Beach">Huntington Beach</option>
-          <option value="Irvine">Irvine</option>
-          <option value="La Habra">La Habra</option>
-          <option value="La Palma">La Palma</option>
-          <option value="Laguna Beach">Laguna Beach</option>
-          <option value="Laguna Hills">Laguna Hills</option>
-          <option value="Laguna Niguel">Laguna Niguel</option>
-          <option value="Laguna Woods">Laguna Woods</option>
-          <option value="Lake Forest">Lake Forest</option>
-          <option value="Los Alamitos">Los Alamitos</option>
-          <option value="Mission Viejo">Mission Viejo</option>
-          <option value="Newport Beach">Newport Beach</option>
-          <option value="Placentia">Placentia</option>
-          <option value="Rancho Santa Margarita">Rancho Santa Margarita</option>
-          <option value="San Clemente">San Clemente</option>
-          <option value="San Juan Capistrano">San Juan Capistrano</option>
-          <option value="Santa Ana">Santa Ana</option>
-          <option value="Seal Beach">Seal Beach</option>
-          <option value="Stanton">Stanton</option>
-          <option value="Villa Park">Villa Park</option>
-          <option value="Westminster">Westminster</option>
-          <option value="Yorba Linda">Yorba Linda</option>
-          <option value="Other">Other</option>
-          <option value="Los Angeles County">Los Angeles County</option>
-          <option value="San Bernadino County">San Bernadino County</option>
-          <option value="San Diego County">San Diego County</option>
-        </select>
+<!-- Jumbotron -->
+  <div id="body">
+    <div class="jumbotron jumbotron-fluid" id="quoteBanner">
+      <div class="bannerText">
+        <span id="avg">Based on info you submitted, the average cost for our services are</span><br>
+        <span id="monthly" class="animated flash">$495-$695<span id="termText"> down/per mo</span></span><br>
+        <span id="total">Total estimate $2,995-$5,495</span><br>
       </div>
     </div>
-<!-- Button -->
-    <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
-  </div><br />
-</form>
+    <div id="formDiv">
+      <p id="formHeader">Our Attorneys fight to get charges reduced or dismissed for our clients. To speak with one of our Attorneys, please enter the required information below.</p>
+    </div>
+<!-- Form -->
+    <form method="post" action="/contact" class="form-control" id="needs-validation" novalidate><br />
+    <!-- First and Last Name of Contact Person-->
+        <div class="row">
+          <div class="col">
+          <label class="mr-sm-2">First Name</label>
+            <input type="text" name="firstName" class="form-control" required>
+          </div>
+          <div class="col">
+          <label class="mr-sm-2">Last Name</label>
+            <input type="text" name="lastName" class="form-control" required>
+          </div>
+        </div><br />
+    <!-- Contact Phone Number and Best Time-->
+        <div class="row">
+          <div class="col">
+          <label class="mr-sm-2">Phone Number</label>
+            <input type="text" name="phone" class="form-control" required>
+          </div>
+          <div class="col">
+            <label class="mr-sm-2">Best Time to Call</label>
+            <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="bestTime">
+              <option value="" selected>Choose...</option>
+              <option value="AM">AM</option>
+              <option value="PM">PM</option>
+              <option value="ASAP">ASAP</option>
+            </select> 
+          </div>
+        </div><br> 
+    <!-- Date of Birth & Date of Arrest-->
+        <div class="row">
+          <div class="col">
+          <label class="mr-sm-2">Date of Birth</label>
+            <input type="text" name="dob" class="form-control">
+          </div>
+          <div class="col">
+          <label class="mr-sm-2">Date Arrested</label>
+            <input type="text" name="dateArrested" class="form-control">
+          </div>
+        </div><br />
+    <!-- Crime/Charge -->
+        <div class="row">
+          <div class="col">
+            <label class="mr-sm-2">Arresting Charge</label>
+            <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="crime" name="crime" onchange="populate('crime','chargeType')">
+              <option value="" selected>Choose...</option>
+              <option value="Aggrevated Assault">Aggrevated Assault</option>
+              <option value="Arson">Arson</option>
+              <option value="Assault">Assault </option>
+              <option value="Battery">Battery </option>
+              <option value="Bribery">Bribery</option>
+              <option value="Carjacking">Carjacking</option>
+              <option value="Conspiracy">Conspiracy</option>
+              <option value="Disorderly Conduct">Disorderly Conduct</option>
+              <option value="Disturbing the Peace">Disturbing the Peace</option>
+              <option value="Domestic Violence">Domestic Violence</option>
+              <option value="Driving on Suspended License">Driving on Suspended License</option>
+              <option value="Driving Under Influence of Alcohol">Driving Under Influence of Alcohol</option>
+              <option value="Drug Crimes">Drug Crimes</option>
+              <option value="Embezzlement">Embezzlement</option>
+              <option value="Evading">Evading</option>
+              <option value="Extortion">Extortion</option>
+              <option value="Failure to Appear">Failure to Appear</option>
+              <option value="False Imprisonment">False Imprisonment</option>
+              <option value="First Degree Burglary">First Degree Burglary</option>
+              <option value="Forgery">Forgery</option>
+              <option value="Fraud">Fraud</option>
+              <option value="Hate Crimes">Hate Crimes</option>
+              <option value="Hit and Run">Hit and Run</option>
+              <option value="Identity Theft">Identity Theft</option>
+              <option value="Indecent Exposure">Indecent Exposure</option>
+              <option value="Insurance Fraud">Insurance Fraud</option>
+              <option value="Kidnapping">Kidnapping</option>
+              <option value="Manslaughter">Manslaughter</option>
+              <option value="Mayhem">Mayhem</option>
+              <option value="Minor in Possession">Minor in Possession</option>
+              <option value="Other">Other</option>
+              <option value="Perjury">Perjury</option>
+              <option value="Prostitution">Prostitution</option>
+              <option value="Public Intoxication">Public Intoxication</option>
+              <option value="Rape">Rape</option>
+              <option value="Resisting Arrest">Resisting Arrest</option>
+              <option value="Robbery">Robbery</option>
+              <option value="Second Degree Burglary">Second Degree Burglary</option>
+              <option value="Shoplifting">Shoplifting</option>
+              <option value="Stalking">Stalking</option>
+              <option value="Statutory Rape">Statutory Rape</option>
+              <option value="Terrorism">Terrorism</option>
+              <option value="Theft / Larceny">Theft / Larceny</option>
+              <option value="Trespass">Trespass</option>
+              <option value="Vandalism">Vandalism</option>
+              <option value="Weapons">Weapons</option>
+            </select>
+          </div>
+    <!-- Felony or Misdemeanor -->
+          <div class="col">
+            <label class="mr-sm-2">Felony or Misdemeanor</label>
+            <select required class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" id="chargeType" name="chargeType">
+            </select>
+          </div>  
+        </div><br />    
+    <!-- Multiple Offences & Prior Charges-->
+        <div class="row">
+          <div class="col">
+          <label class="mr-sm-2">Additional Charges</label>
+            <input type="text" name="multipleOff" class="form-control">
+          </div>
+          <div class="col">
+          <label class="mr-sm-2">Prior Convictions</label>
+            <input type="text" name="priors" class="form-control">
+          </div>
+        </div><br />
+    <!-- City of Residence -->
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label class="mr-sm-2">City of Residence</label>
+            <select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0" name="city">
+              <option selected>Choose...</option>
+              <option value="Aliso Viejo">Aliso Viejo</option>
+              <option value="Anaheim">Anaheim</option>
+              <option value="Brea">Brea</option>
+              <option value="Buena Park">Buena Park</option>
+              <option value="Costa Mesa">Costa Mesa</option>
+              <option value="Cypress">Cypress</option>
+              <option value="Dana Point">Dana Point</option>
+              <option value="Fountain Valley">Fountain Valley</option>
+              <option value="Fullerton">Fullerton</option>
+              <option value="Garden Grove">Garden Grove</option>
+              <option value="Huntington Beach">Huntington Beach</option>
+              <option value="Irvine">Irvine</option>
+              <option value="La Habra">La Habra</option>
+              <option value="La Palma">La Palma</option>
+              <option value="Laguna Beach">Laguna Beach</option>
+              <option value="Laguna Hills">Laguna Hills</option>
+              <option value="Laguna Niguel">Laguna Niguel</option>
+              <option value="Laguna Woods">Laguna Woods</option>
+              <option value="Lake Forest">Lake Forest</option>
+              <option value="Los Alamitos">Los Alamitos</option>
+              <option value="Mission Viejo">Mission Viejo</option>
+              <option value="Newport Beach">Newport Beach</option>
+              <option value="Placentia">Placentia</option>
+              <option value="Rancho Santa Margarita">Rancho Santa Margarita</option>
+              <option value="San Clemente">San Clemente</option>
+              <option value="San Juan Capistrano">San Juan Capistrano</option>
+              <option value="Santa Ana">Santa Ana</option>
+              <option value="Seal Beach">Seal Beach</option>
+              <option value="Stanton">Stanton</option>
+              <option value="Villa Park">Villa Park</option>
+              <option value="Westminster">Westminster</option>
+              <option value="Yorba Linda">Yorba Linda</option>
+              <option value="Other">Other</option>
+              <option value="Los Angeles County">Los Angeles County</option>
+              <option value="San Bernadino County">San Bernadino County</option>
+              <option value="San Diego County">San Diego County</option>
+            </select>
+          </div>
+        </div>
+    <!-- Button -->
+        <button type="submit" class="btn btn-outline-primary btn-lg" id="get-quote-btn">Submit</button>
+      </div><br />
+    </form>
+  </div> <!--Body id end-->
+<!-- Footer -->
+  <div id="footer">
+    <p>Patent Pending technology developed by Inbound Legal, a division of SC INC.</p>
+  </div>
+</div>
 
 <script>
 // Example starter JavaScript for disabling form submissions if there are invalid fields
