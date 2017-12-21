@@ -29,7 +29,7 @@ router.post("/est", (req, res) => {
         port: 80,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'oclawyers@sportchrome.com', // generated ethereal user
+            user: 'oclawyers2@sportchrome.com', // generated ethereal user
             pass: '123456'  // generated ethereal password
         },
         tls: {
@@ -39,8 +39,8 @@ router.post("/est", (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
-        to: 'oclawyers@sportchrome.com', // list of receivers
+        from: '"OC Lawyers" <oclawyers2@sportchrome.com>', // sender address
+        to: 'oclawyers2@sportchrome.com', // list of receivers
         subject: 'New OC Lawyers Lead', // Subject line
         text: '', // plain text body
         html: output // html body
@@ -88,7 +88,7 @@ router.post("/contact", (req, res) => {
         port: 80,
         secure: false, // true for 465, false for other ports
         auth: {
-            user: 'oclawyers@sportchrome.com', // generated ethereal user
+            user: 'oclawyers2@sportchrome.com', // generated ethereal user
             pass: '123456'  // generated ethereal password
         },
         tls: {
@@ -98,8 +98,8 @@ router.post("/contact", (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"OC Lawyers" <oclawyers@sportchrome.com>', // sender address
-        to: 'oclawyers@sportchrome.com', // list of receivers
+        from: '"OC Lawyers" <oclawyers2@sportchrome.com>', // sender address
+        to: 'oclawyers2@sportchrome.com', // list of receivers
         subject: 'OC Lawyers Lead to Contact', // Subject line
         text: '', // plain text body
         html: output // html body
